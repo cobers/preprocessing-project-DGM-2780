@@ -1,0 +1,120 @@
+
+/*-------------------------------------------------------------NAVIGATION------------------------------------------------------------------*/
+@media @phone {
+
+.custom-btn(@btnWidth, @btnHeight){
+    width: @btnWidth;
+    height: @btnHeight;
+    color: @default-color;
+    font-size: 16px;
+    background: @btnBack;
+    border: none;
+    
+    &:hover {
+        box-shadow: @shadow;
+    }
+
+    a {
+    text-decoration: none;
+    color: @default-color;
+    }
+}
+
+.btn {
+    .custom-btn(175px, 40px);
+}
+
+.divDefault{
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.align {
+    align-items: center;
+}
+
+/*-------------------------------------------------------------BODY------------------------------------------------------------------*/
+
+
+.hero {
+    display: block;
+    position: relative;
+
+    .overlay {
+        position: absolute;        
+        color: @default-color;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        h3 {
+            padding: 10px 0 10px 0;
+            font-size: 1rem;
+        }
+
+        h1 {
+            font-weight: bold;
+            font-size: 1.25rem;
+        }
+    }
+}
+
+.grid {
+    img {
+        padding: 15px 0 5px 0;
+    }
+    figcaption {
+        font-size: 1.25rem;
+    }
+}
+
+.grid div.detail,
+.grid div.details {
+    display: none;
+}
+
+nav {
+        background: @default-color;
+
+        ul {
+            list-style-type: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: @secondary-color;
+            display: block;
+            padding: 10px;
+            text-align: center;
+        }
+    }
+
+body {
+    h1, h2, h3, p, a {
+        font-family: @font-stack;
+    }
+
+    .grid {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        .align();
+        padding: 25px 0 25px 0;
+    }
+}
+
+.bodyFill {
+
+    .para{
+        flex-direction: column;
+        .align();
+        padding: 25px 8px 25px 8px;
+    }
+}
+
+.wrap {
+    width: 100%;
+}
+
+}

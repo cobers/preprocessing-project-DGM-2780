@@ -1,0 +1,371 @@
+/*-------------------------------------------------------------VARIABLES------------------------------------------------------------------*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+@media (min-width: 1149px) {
+  .divDefault {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  nav .navi {
+    display: flex;
+    justify-content: space-between;
+    max-width: 85%;
+    margin: auto;
+  }
+  nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  nav a {
+    text-decoration: none;
+    padding: 16px 8px 10px 8px;
+    color: black;
+    display: block;
+    text-align: center;
+    align-items: center;
+    border-bottom: 2px solid white;
+  }
+  nav a:hover {
+    border-bottom: 2px solid black;
+  }
+  .containerFull {
+    max-width: 1000px;
+  }
+  body h1,
+  body h2,
+  body h3,
+  body p,
+  body a {
+    font-family: 'Roboto', sans-serif;
+  }
+  body .wrap {
+    margin: 0 auto;
+    width: 85%;
+  }
+  body .hero {
+    display: block;
+    position: relative;
+  }
+  body .hero .overlay {
+    position: absolute;
+    color: white;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -25%);
+  }
+  body .hero .overlay h3 {
+    padding: 20px 0 20px 0;
+    font-size: 1.75rem;
+  }
+  body .hero .overlay h1 {
+    font-weight: bold;
+    font-size: 2.5rem;
+  }
+  body .grid figcaption {
+    display: none;
+  }
+  body .grid div.images {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 60px 0 0 0;
+  }
+  body .grid div.detail {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 0 0 0;
+  }
+  body .grid div.detail a {
+    width: 23.5%;
+    font-weight: bold;
+    font-size: 1.15rem;
+  }
+  body .grid div.details {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0 80px 0;
+  }
+  body .grid div.details a {
+    width: 23.5%;
+  }
+  body .grid div.buttons {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+  }
+  body .grid img {
+    width: 23.5%;
+    height: 100%;
+  }
+  body .grid a {
+    color: black;
+    text-decoration: none;
+    width: 100%;
+  }
+  body .btn {
+    width: 150px;
+    height: 35px;
+    color: white;
+    font-size: 16px;
+    background: #4CAF50;
+    border: none;
+  }
+  body .btn:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  }
+  body .btn a {
+    text-decoration: none;
+    color: white;
+  }
+}
+footer {
+  height: 80px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+footer div {
+  padding-bottom: 15px;
+}
+.bodyFill .para {
+  display: flex;
+}
+.bodyFill h1 {
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 30px 0 30px 0;
+}
+.bodyFill p {
+  font-size: 1.25rem;
+  padding-bottom: 60px;
+}
+/*-------------------------------------------------------------NAVIGATION------------------------------------------------------------------*/
+@media (max-width: 500px) {
+  .btn {
+    width: 175px;
+    height: 40px;
+    color: white;
+    font-size: 16px;
+    background: #4CAF50;
+    border: none;
+  }
+  .btn:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  }
+  .btn a {
+    text-decoration: none;
+    color: white;
+  }
+  .divDefault {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .align {
+    align-items: center;
+  }
+  /*-------------------------------------------------------------BODY------------------------------------------------------------------*/
+  .hero {
+    display: block;
+    position: relative;
+  }
+  .hero .overlay {
+    position: absolute;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .hero .overlay h3 {
+    padding: 10px 0 10px 0;
+    font-size: 1rem;
+  }
+  .hero .overlay h1 {
+    font-weight: bold;
+    font-size: 1.25rem;
+  }
+  .grid img {
+    padding: 15px 0 5px 0;
+  }
+  .grid figcaption {
+    font-size: 1.25rem;
+  }
+  .grid div.detail,
+  .grid div.details {
+    display: none;
+  }
+  nav {
+    background: white;
+  }
+  nav ul {
+    list-style-type: none;
+  }
+  nav a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 10px;
+    text-align: center;
+  }
+  body h1,
+  body h2,
+  body h3,
+  body p,
+  body a {
+    font-family: 'Roboto', sans-serif;
+  }
+  body .grid {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 0 25px 0;
+  }
+  .bodyFill .para {
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 8px 25px 8px;
+  }
+  .wrap {
+    width: 100%;
+  }
+}
